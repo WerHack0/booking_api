@@ -13,6 +13,6 @@ export class RentalObject {
     city: string;
     @Column({nullable: true})
     capacity: number;
-    @OneToMany(() => Booking, (booking: Booking) => booking.objectId) // Poprawna definicja relacji
+    @OneToMany(() => Booking, (booking: Booking) => booking.objectId)
     bookings: Booking[];
 }
